@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Kinya</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Kinya">
+  <meta name="theme-color" content="#0f2a20">
+  <link rel="icon" href="app/icone-192.png">
+  <link rel="apple-touch-icon" href="app/icone-192.png">
+  <link rel="stylesheet" href="app/style.css">
+</head>
+<body>
+  <main id="app"><p class="chargement">Chargement…</p></main>
+  <script type="module" src="app/app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+  </script>
+</body>
+</html>

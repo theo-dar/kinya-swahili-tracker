@@ -1,0 +1,70 @@
+{
+  "langue": "rw",
+  "unite": 1,
+  "titre": "Gusuhuza — Les salutations",
+  "phrases": [
+    {
+      "id": "rw-01-01",
+      "cible": "Muraho.",
+      "fr": "Bonjour (poli).",
+      "audio": "audio/rw/rw-01-01.wav",
+      "verifie": false
+    },
+    {
+      "id": "rw-01-02",
+      "cible": "Mwaramutse.",
+      "fr": "Bonjour (le matin).",
+      "audio": "audio/rw/rw-01-02.wav",
+      "verifie": false
+    },
+    {
+      "id": "rw-01-03",
+      "cible": "Mwiriwe.",
+      "fr": "Bon après-midi / Bonsoir.",
+      "audio": "audio/rw/rw-01-03.wav",
+      "verifie": false
+    },
+    {
+      "id": "rw-01-04",
+      "cible": "Amakuru?",
+      "fr": "Quoi de neuf? (litt. « Des nouvelles? »)",
+      "audio": "audio/rw/rw-01-04.wav",
+      "verifie": false
+    },
+    {
+      "id": "rw-01-05",
+      "cible": "Ni meza.",
+      "fr": "Ça va bien.",
+      "audio": "audio/rw/rw-01-05.wav",
+      "verifie": false
+    },
+    {
+      "id": "rw-01-06",
+      "cible": "Nitwa Teddy.",
+      "fr": "Je m'appelle Teddy.",
+      "audio": "audio/rw/rw-01-06.wav",
+      "verifie": false
+    },
+    {
+      "id": "rw-01-07",
+      "cible": "Witwa nde?",
+      "fr": "Comment tu t'appelles?",
+      "audio": "audio/rw/rw-01-07.wav",
+      "verifie": false
+    },
+    {
+      "id": "rw-01-08",
+      "cible": "Murakoze.",
+      "fr": "Merci.",
+      "audio": "audio/rw/rw-01-08.wav",
+      "verifie": false
+    },
+    {
+      "id": "rw-01-09",
+      "cible": "Murabeho.",
+      "fr": "Au revoir.",
+      "audio": "audio/rw/rw-01-09.wav",
+      "verifie": false
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "langue": "sw",
+  "unite": 1,
+  "titre": "Salamu — Les salutations",
+  "phrases": [
+    {
+      "id": "sw-01-01",
+      "cible": "Habari?",
+      "fr": "Comment ça va? (litt. « Des nouvelles? »)",
+      "audio": "audio/sw/sw-01-01.wav",
+      "verifie": false
+    },
+    {
+      "id": "sw-01-02",
+      "cible": "Nzuri.",
+      "fr": "Bien.",
+      "audio": "audio/sw/sw-01-02.wav",
+      "verifie": false
+    },
+    {
+      "id": "sw-01-03",
+      "cible": "Habari za asubuhi?",
+      "fr": "Comment va ton matin?",
+      "audio": "audio/sw/sw-01-03.wav",
+      "verifie": false
+    },
+    {
+      "id": "sw-01-04",
+      "cible": "Jina langu ni Teddy.",
+      "fr": "Mon nom est Teddy.",
+      "audio": "audio/sw/sw-01-04.wav",
+      "verifie": false
+    },
+    {
+      "id": "sw-01-05",
+      "cible": "Unaitwa nani?",
+      "fr": "Comment tu t'appelles?",
+      "audio": "audio/sw/sw-01-05.wav",
+      "verifie": false
+    },
+    {
+      "id": "sw-01-06",
+      "cible": "Asante.",
+      "fr": "Merci.",
+      "audio": "audio/sw/sw-01-06.wav",
+      "verifie": false
+    },
+    {
+      "id": "sw-01-07",
+      "cible": "Karibu.",
+      "fr": "Bienvenue / De rien.",
+      "audio": "audio/sw/sw-01-07.wav",
+      "verifie": false
+    },
+    {
+      "id": "sw-01-08",
+      "cible": "Kwaheri.",
+      "fr": "Au revoir.",
+      "audio": "audio/sw/sw-01-08.wav",
+      "verifie": false
+    }
+  ]
+}

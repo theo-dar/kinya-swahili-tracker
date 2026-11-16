@@ -1,0 +1,110 @@
+/* style.css — L'apparence de l'app. Pensé pour le téléphone d'abord. */
+:root {
+  --fond: #0f2a20;        /* vert forêt profond */
+  --carte: #173a2d;
+  --carte-2: #1e4a39;
+  --texte: #f3efe4;
+  --doux: #b9c4b5;
+  --or: #f2b134;          /* soleil / jaune des drapeaux */
+  --ciel: #4fb3e8;        /* bleu du drapeau rwandais */
+  --bon: #3ecf7a;
+  --mauvais: #ef5d5d;
+  --rayon: 18px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--fond);
+  color: var(--texte);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+}
+
+#app {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: calc(env(safe-area-inset-top) + 16px) 18px calc(env(safe-area-inset-bottom) + 24px);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+h1 { margin: 0; font-size: 2rem; letter-spacing: -0.5px; }
+h2 { margin: 0; font-size: 1.25rem; }
+
+.entete { display: flex; justify-content: space-between; align-items: center; }
+.serie { font-weight: 700; color: var(--or); }
+.fait { background: var(--carte-2); padding: 12px 14px; border-radius: var(--rayon); margin: 0; }
+.pied, .chargement, .vide { color: var(--doux); font-size: 0.9rem; text-align: center; }
+
+/* Cartes de langue sur l'accueil */
+.langue {
+  background: var(--carte);
+  border-radius: var(--rayon);
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  border: 2px solid transparent;
+}
+.langue.du-jour { border-color: var(--or); }
+.langue-tete { display: flex; justify-content: space-between; align-items: center; }
+.badge { background: var(--or); color: var(--fond); font-weight: 700; font-size: 0.75rem; padding: 4px 10px; border-radius: 99px; }
+.stats { margin: 0; color: var(--doux); font-size: 0.9rem; }
+.ok { color: var(--bon); font-weight: 600; }
+.retard { color: var(--mauvais); font-weight: 600; }
+
+.barre { height: 10px; background: #0b1f17; border-radius: 99px; overflow: hidden; }
+.barre > div { height: 100%; background: linear-gradient(90deg, var(--ciel), var(--or)); border-radius: 99px; transition: width 0.3s; }
+
+/* Boutons */
+button {
+  font: inherit;
+  font-size: 1.05rem;
+  border: 0;
+  border-radius: 14px;
+  padding: 15px 18px;
+  cursor: pointer;
+  color: var(--texte);
+  background: var(--carte-2);
+  transition: transform 0.08s, opacity 0.2s;
+}
+button:active { transform: scale(0.97); }
+button:disabled { cursor: default; }
+.principal { background: var(--or); color: var(--fond); font-weight: 700; }
+.secondaire { background: var(--carte-2); }
+.actif { background: var(--mauvais); }
+
+/* Session */
+.haut { display: flex; align-items: center; gap: 12px; }
+.haut .barre { flex: 1; }
+.quitter { background: none; padding: 6px 10px; font-size: 1.3rem; color: var(--doux); }
+
+.etape { display: flex; flex-direction: column; gap: 14px; flex: 1; justify-content: center; }
+.etiquette { margin: 0; color: var(--ciel); font-weight: 700; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 1px; text-align: center; }
+.cible { margin: 0; font-size: 2.1rem; font-weight: 800; text-align: center; line-height: 1.2; }
+.cible.cachee { visibility: hidden; }
+.traduction { margin: 0; text-align: center; color: var(--doux); font-size: 1.15rem; }
+.traduction.grande { font-size: 1.6rem; color: var(--texte); font-weight: 700; }
+.consigne { margin: 0; text-align: center; color: var(--doux); }
+
+.ecouter { align-self: center; background: var(--ciel); color: var(--fond); font-weight: 700; }
+.ecouter.gros { font-size: 2.6rem; width: 110px; height: 110px; border-radius: 50%; padding: 0; }
+
+.micro { display: flex; gap: 10px; justify-content: center; }
+
+.choix { display: flex; flex-direction: column; gap: 10px; }
+.choix button { text-align: left; background: var(--carte); }
+.choix .bon, .bon-btn { background: var(--bon); color: #06210f; font-weight: 700; }
+.choix .mauvais, .mauvais-btn { background: var(--mauvais); color: #2b0606; font-weight: 700; }
+.choix button:disabled:not(.bon):not(.mauvais) { opacity: 0.45; }
+
+.auto-eval { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+
+.fin { text-align: center; display: flex; flex-direction: column; gap: 12px; justify-content: center; flex: 1; }
+.grand-emoji { font-size: 4rem; margin: 0; }
+
+#apres { display: flex; flex-direction: column; }
